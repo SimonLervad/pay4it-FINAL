@@ -1,5 +1,8 @@
 <?php include 'head.php' ?>
 
+<head>
+	<meta charset="utf-8">
+</head>
 
 <style type="text/css">
 	#købSolkortBox {
