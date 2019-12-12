@@ -85,6 +85,7 @@ xhr.addEventListener("load", function() {
 
         let kabineID = `${obj.Booths[i].ID}`
         console.log(kabineID);
+        
 
         // Tilbehør til kabiner
         let perks = document.createElement("DIV");
@@ -158,6 +159,20 @@ xhr.addEventListener("load", function() {
 				}, 1000);
 			list.appendChild(div2);
         }
+        //navnet på kabine på forsiden
+        let kabineBes = document.createElement("h3");
+        kabineBes.setAttribute("id", "kabineBes");
+        kabineBes.setAttribute("style", "position: absolute; font-size: 3em;margin-top: -16%;");
+        let kabinePri = document.createElement("P");
+        kabinePri.setAttribute("id", "kabinePri");
+        kabinePri.setAttribute("style", "position: absolute; margin-top: 15%;");
+
+        kabineBes.innerHTML = `${obj.Booths[i].Description}`;
+        kabinePri.innerHTML = `${obj.Booths[i].Price}` + " pr./min";
+
+        list.appendChild(kabineBes);
+        list.appendChild(kabinePri);
+
 
 
         kabiner.appendChild(list);
@@ -388,6 +403,7 @@ xhr.addEventListener("load", function() {
                 let produktName = `${product.Presentation.Name}`;
                 let bp = document.createElement("DIV");
                 bp.setAttribute("class", "produktListeNavn");
+                bp.setAttribute("id", "PLN="+`${product.ID}`);
 
                 bp.innerHTML = produktName;
                 $("produktKøbt").appendChild(bp);
@@ -397,6 +413,11 @@ xhr.addEventListener("load", function() {
             }
         }
 
+    
+        
+    
+        
+
         function productsPrice(product) {
             if (productCounter === 10) {
                 console.log("Du kan ikke købe flere produkter");
@@ -405,6 +426,7 @@ xhr.addEventListener("load", function() {
                 let produktPris = `${product.Price}`;
                 let bp = document.createElement("DIV");
                 bp.setAttribute("class", "produktListe");
+                bp.setAttribute("id", "PL="+`${product.ID}`);
 
                 bp.innerHTML = produktPris + " kr";
                 $("produktKøbt").appendChild(bp)
@@ -415,9 +437,12 @@ xhr.addEventListener("load", function() {
 
                 increase();
                 console.log(productCounter);
+
             }
         }
         console.log(productCounter);
+
+        
 
         (function() {
             function scrollHorizontally(e) {

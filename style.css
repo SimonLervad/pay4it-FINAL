@@ -170,6 +170,7 @@ h1, h2, h3, h4 {
 	display:flex;
 	justify-content: center;
 	width:50%;
+	margin-top: 4%;
 }
 #kabiner li:nth-child(odd) {
 	border-right:1px solid grey;

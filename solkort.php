@@ -32,7 +32,7 @@
 	<h2>Opret solkort</h2>
 	<div class="flex">
 		<a href="solkort-input.php" class="solkortButton" id="small">
-			Køb for 99,- og tag sol for 150,-
+		
 		</a>
 		<a href="solkort-input.php" class="solkortButton" id="large">
 			køb for 299,- og tag sol for 600,-

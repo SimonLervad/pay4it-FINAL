@@ -1,4 +1,9 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <style type="text/css">
 	#SolkortBox {
 		position:fixed;
@@ -45,7 +50,7 @@
 	opacity:1;
 	overflow:inherit;
 	transition-duration: 0.5s;
-	transition-delay: 0.5s; 
+	transition-delay: 0.5s;
 	margin:150px 0;
 }
 #cancelPayment {
@@ -69,7 +74,7 @@
         	outline:none;
         	text-decoration: none;
         }
-</style>	
+</style>
 	<h2>Solkort</h2>
 	<div id="paymentTypes">
 		<div id="solkortBox">
