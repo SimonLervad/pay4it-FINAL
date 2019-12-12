@@ -103,7 +103,19 @@
 	</div>
 </form>
 <div id="paymentTypes">
+
+<!--Nye solkort-->
 	<div id="købSolkortBox">
+		<h2>Opret solkort</h2>
+		<div class="solkorts">
+		<div class="solkort" id="large"><img id="solL" src="./images/GoldCard-01.png" alt="Solkort guld" width="460"></div>
+		<div class="solkort" id="medium"><img id="solM" src="./images/SilverCard-01.png" alt="Solkort sølv" width="460"></div>
+		<div class="solkort" id="small"><img id="solS" src="./images/BronzeCard-01.png" alt="Solkort bronze" width="460"></div>
+		</div>
+
+		<a class="confirmButton" href="index.php">Afbryd</a>
+	</div>
+	<!--div id="købSolkortBox">
 		<h1>Køb solkort</h1>
 		<div class="flex">
 			<button class="solkortButton" id="small">
@@ -117,7 +129,7 @@
 			</button>
 		</div>
 		<a href="">Afbryd</a>
-	</div>
+	</div-->
 	<div id="kontantBox">
 		<h1>Kontant</h1>
 		<p>

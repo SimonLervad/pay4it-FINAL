@@ -165,10 +165,10 @@ xhr.addEventListener("load", function() {
         kabineBes.setAttribute("style", "position: absolute; font-size: 3em;margin-top: -16%;");
         let kabinePri = document.createElement("P");
         kabinePri.setAttribute("id", "kabinePri");
-        kabinePri.setAttribute("style", "position: absolute; margin-top: 15%;");
+        kabinePri.setAttribute("style", "position: absolute; margin-top: 15%; font-size: 2em;");
 
         kabineBes.innerHTML = `${obj.Booths[i].Description}`;
-        kabinePri.innerHTML = `${obj.Booths[i].Price}` + " pr./min";
+        kabinePri.innerHTML = `${obj.Booths[i].Price}` + " kr. pr./min";
 
         list.appendChild(kabineBes);
         list.appendChild(kabinePri);
@@ -507,7 +507,7 @@ xhr.addEventListener("load", function() {
         $("solkortKøb").style.display = "none";
         $("solkort").style.display = "none";
 
-        let large = 299;
+        let large = 950;
         let sunAmount = $("total").innerHTML;
 
         let newTotal = document.createElement("DIV");
@@ -527,10 +527,10 @@ xhr.addEventListener("load", function() {
         asd.setAttribute("style", "display:flex;justify-content:space-between;width:100%;border-bottom:1px solid black;");
 
         let qwe = document.createElement("P");
-        qwe.innerHTML = "299 kr";
+        qwe.innerHTML = "950 kr";
 
         let zxc = document.createElement("P")
-        zxc.innerHTML = "Solkort";
+        zxc.innerHTML = "Solkort Guld";
 
         asd.appendChild(zxc);
         asd.appendChild(qwe);
@@ -540,16 +540,16 @@ xhr.addEventListener("load", function() {
         suncard.setAttribute("style", "display:flex;justify-content:space-between;width:100%;margin-bottom:-50px;");
 
         let paraSol = document.createElement("P");
-        paraSol.innerHTML = "Tilbage på solkort";
+        paraSol.innerHTML = "Resterende beløb på solkort";
         suncard.appendChild(paraSol);
 
         let paraLarge = document.createElement("P");
 
-        let result = 600 - Number(sunAmount);
+        let result = 950 - Number(sunAmount);
         console.log(result);
-        $("total").innerHTML = "600";
+        $("total").innerHTML = "750";
         if (result <= -1) {
-            $("total").innerHTML = Number(sunAmount) + 299;
+            $("total").innerHTML = Number(sunAmount) + 750;
         }
 
 
@@ -567,7 +567,7 @@ xhr.addEventListener("load", function() {
         $("solkortKøb").style.display = "none";
         $("solkort").style.display = "none";
 
-        let large = 99;
+        let large = 240;
         let sunAmount = $("total").innerHTML;
 
         let newTotal = document.createElement("DIV");
@@ -587,10 +587,10 @@ xhr.addEventListener("load", function() {
         asd.setAttribute("style", "display:flex;justify-content:space-between;width:100%;border-bottom:1px solid black;");
 
         let qwe = document.createElement("P");
-        qwe.innerHTML = "99 kr";
+        qwe.innerHTML = "240 kr";
 
         let zxc = document.createElement("P")
-        zxc.innerHTML = "Solkort";
+        zxc.innerHTML = "Solkort Bronze";
 
         asd.appendChild(zxc);
         asd.appendChild(qwe);
@@ -600,14 +600,14 @@ xhr.addEventListener("load", function() {
         suncard.setAttribute("style", "display:flex;justify-content:space-between;width:100%;margin-bottom:-50px;");
 
         let paraSol = document.createElement("P");
-        paraSol.innerHTML = "Tilbage på solkort";
+        paraSol.innerHTML = "Resterende beløb på solkort";
         suncard.appendChild(paraSol);
 
         let paraLarge = document.createElement("P");
 
-        let result = 150 - Number(sunAmount);
+        let result = 240 - Number(sunAmount);
         console.log(result);
-        $("total").innerHTML = "150";
+        $("total").innerHTML = "200";
         if (result <= -1) {
             $("total").innerHTML = Number(sunAmount) + 99;
         }
@@ -627,7 +627,7 @@ xhr.addEventListener("load", function() {
         $("solkortKøb").style.display = "none";
         $("solkort").style.display = "none";
 
-        let large = 199;
+        let large = 625;
         let sunAmount = $("total").innerHTML;
 
         let newTotal = document.createElement("DIV");
@@ -647,10 +647,10 @@ xhr.addEventListener("load", function() {
         asd.setAttribute("style", "display:flex;justify-content:space-between;width:100%;border-bottom:1px solid black;");
 
         let qwe = document.createElement("P");
-        qwe.innerHTML = "199 kr";
+        qwe.innerHTML = "625 kr";
 
         let zxc = document.createElement("P")
-        zxc.innerHTML = "Solkort";
+        zxc.innerHTML = "Solkort Sølv";
 
         asd.appendChild(zxc);
         asd.appendChild(qwe);
@@ -660,14 +660,14 @@ xhr.addEventListener("load", function() {
         suncard.setAttribute("style", "display:flex;justify-content:space-between;width:100%;margin-bottom:-50px;");
 
         let paraSol = document.createElement("P");
-        paraSol.innerHTML = "Tilbage på solkort";
+        paraSol.innerHTML = "Resterende beløb på solkort";
         suncard.appendChild(paraSol);
 
         let paraLarge = document.createElement("P");
 
-        let result = 350 - Number(sunAmount);
+        let result = 625 - Number(sunAmount);
         console.log(result);
-        $("total").innerHTML = "350";
+        $("total").innerHTML = "500";
         if (result <= -1) {
             $("total").innerHTML = Number(sunAmount) + 199;
         }
