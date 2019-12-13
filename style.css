@@ -1,16 +1,11 @@
 * {
 	box-sizing:border-box;
-	font-family: 'Roboto', sans-serif;
 }
 
 body {
 	margin:0;
 	padding:0;
-}
-
-h1, h2, h3, h4 {
-	text-transform: uppercase;
-	color:#424242;
+	background-color:white;
 }
 
 /* 
@@ -35,14 +30,11 @@ h1, h2, h3, h4 {
 	position:fixed;
 	top:25px;
 	right:25px;
-	font-size:75px;
-	border-radius:50px;
-	color:black;
+	font-size:50px;
+	background-color:transparent;
 	border:none;
 	z-index:9;
 	cursor: pointer;
-	color:white;
-	text-shadow:1px 1px 5px grey;
 }
 
 #help h1 {font-size:50px;}
@@ -50,6 +42,7 @@ h1, h2, h3, h4 {
 
 #help button {
 	font-size:50px;
+	background-color:transparent;
 	border:none;
 	cursor: pointer;
 }
@@ -63,6 +56,12 @@ h1, h2, h3, h4 {
 	z-index:10;
 	top:25px;
 	right:25px;
+}
+
+.fas.fa-question-circle {
+	color: white;
+	font-size: 80px;
+	text-shadow: 2px 3px 10px #666666;
 }
 
 /* 
@@ -79,11 +78,18 @@ h1, h2, h3, h4 {
 	justify-content:center;
 }
 
-#section a {
-	position:fixed;
+#wrapper {
+	padding:100 50px;
+	display:flex;
+	flex-wrap: wrap;
+	height: 150%;
+}
+
+#wrapper a {
 	font-size:75px;
+	justify-content: center;
 	width: 100%;
-	height:50%;
+	padding:750px 50px 40px;
 	text-decoration: none;
 	color:white;
 	background-repeat: no-repeat;
@@ -92,20 +98,17 @@ h1, h2, h3, h4 {
 	font-family: 'Helvetica Neue', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding:100px 50px;
-	filter: grayscale(25%);
-	filter
 }
 
-#section a i {font-size:200px;}
+#wrapper a i {font-size:200px;}
 
 #language {
-	width:	50%;
+	width:	100%;
 	display:flex;
 	justify-content: space-around;
-	z-index: 3;
+	z-index: 1;
 	margin-top: 30px;
-	margin-left: 150px;
+	margin-left: 600px;
 }
 
 #language img {
@@ -114,22 +117,16 @@ h1, h2, h3, h4 {
 }
 
 #vka {
-	position: fixed;
-	top:50%;
+	background-image: url('images/tanning.jpg');
+	position: absolute;
+	top: 1050px;
 	left: 0;
-	text-align:right;
-	background-image: linear-gradient(rgba(0,0,0,0.5), transparent, transparent), url('images/tanning.jpg');
 }
 #vsk {
 	background-image: url('images/emotions.jpg');
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	left: 0;
-	text-align:left;
-	display:flex;
-	flex-direction: column-reverse;
-	z-index:2;
-	box-shadow: 1px 1px 50px #444444;
 }
 
 /* 
@@ -151,60 +148,46 @@ h1, h2, h3, h4 {
 	padding:75px 0;
 }
 #container h1 {
-	text-align:center;
-	font-size:100px;
+	margin-left: 90px;
+	margin-top: 150px;
+	font-size:80px;
+	font-family: 'Helvetica', 'sans-serif';
+	text-transform: uppercase;
+	color: #7c7b7b;
+	text-shadow: 2px 3px 10px #cfcfcf;
 }
 #boxOne, #boxTwo, #boxThree, #boxFour, #boxFive {
-	position:relative;
 	width:100%;
 }
 #kabiner {
 	padding:25px;
-	display:flex;
-	justify-content: space-around;
-	flex-wrap:wrap;
 }
 #kabiner li {
-	border-bottom:1px solid grey;
-	padding:150px 50px;
+	border-bottom:1px solid black;
+	padding:25px;
+	margin:10px 0;
 	display:flex;
-	justify-content: center;
-	width:50%;
-	margin-top: 4%;
-}
-#kabiner li:nth-child(odd) {
-	border-right:1px solid grey;
-}
-#kabiner li:nth-child(4), #kabiner li:nth-child(3) {
-	border-bottom:none;
+	justify-content: space-between;
 }
 .number {
-	position:absolute;
 	margin:0;
-	margin-top:-70px;
-	margin-left:-115px;
-	background-color:#1DAB3E;
 	display:flex;
 	justify-content: space-around;
 	flex-direction: column;
-	width:70px;
-	height:70px;
+	width:100px;
+	height:100px;
 	border-radius: 50px;
 	text-align:center;
-	font-size:50px;
-	color:white;
-	font-weight:900;
+	font-size:100px;
 }
 .image {
 	width:400px;
-	margin-top:25px;
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: nowrap;
 }
 #kabiner img {
-	width: 306px;
-    height: auto;
+	width:300px;
 }
 #kabiner label {
 	margin:15px 0;
@@ -213,27 +196,21 @@ h1, h2, h3, h4 {
 	text-align:center;
 }
 .perksP i {
-	border:1px solid #424242;
+	border:1px solid black;
 	padding:15px;
 	border-radius:50px;
-	font-size:30px;
-	margin:0 5px;
+	font-size:50px;
+	margin:0 10px;
 }
 .perks {
-	position:absolute;
-	margin-top:-90px;
-	margin-left:50px;
+	min-width:300px;
 }
 .vælgKabine {
-	position:absolute;
 	background-color:transparent;
 	display:block;
 	border:none;
 	float:right;
 	font-size:100px;
-	width:395px;
-	height:250px;
-	margin-top:-75px;
 	cursor: pointer;
 	outline:none;
 }
@@ -241,10 +218,6 @@ h1, h2, h3, h4 {
 	color:#022B44;
 	border-radius:50px;
 	font-size:100px;
-}
-.labelTimer {
-	position:absolute;
-	margin-top: 221px;
 }
 
 /*
@@ -261,24 +234,18 @@ h1, h2, h3, h4 {
             width:60%;
             margin:auto;
             background-color:white;
-            box-shadow:0 0 10px #424242;
+            box-shadow:0 0 10px black;
             display:block;
             padding:0 40px;
             transition-duration: 1s;
             overflow:hidden;
             height:0;
-            font-size:25px;
-            transition-duration: 1s;
-            flex-direction: column;
-            justify-content: space-around;
+            font-size:35px;
         }
         .ordreBlack{ /* Den sorte bjælke */
-            border-top:1px solid #424242;
+            border-top:1px solid black;
             padding-top:10px;
             margin-top:50px;
-            display:flex;
-            justify-content: space-between;
-            flex-wrap:wrap;
         }
         #ordreTime{ /* Indholdet i den bestillingskassen */
             display:flex;
@@ -288,22 +255,20 @@ h1, h2, h3, h4 {
         #kabine {
         	margin:10px 0;
         }
-        .confirmButton {
-        	background-color:white;
-        	border:5px solid #022B44;
-        	border-radius:50px;
-        	width:75%;
-        	color:#022B44;
-        	font-size:40px;
-        	padding:10px 25px;
-        	margin:100px auto;
-        	display:block;
-        	cursor:pointer;
-        	outline:none;
-        }
-.sliderContainer{
+		.confirmButton {
+        	background-color: white;
+			border-radius: 50px;
+			width: 45%;
+			color: #fff;
+			background-color: #00a3e2;
+			font-size: 40px;
+			padding: 21px 25px;
+			margin: 100px auto;
+			display: block;
+		}
+/* Slider */
+	.sliderContainer{
             width: 75%;
-            background-color: #022B44;
             padding:25px;
             border-radius: 50px;
             margin:50px auto;
@@ -312,7 +277,7 @@ h1, h2, h3, h4 {
             -webkit-appearance: none;
             width: 100%;
             height: 10px;
-            background: #FFFFFF;
+            background: #8e9090;
             -webkit-transition: .2s;
             transition: opacity .2s;
             border-radius: 20px;
@@ -323,20 +288,19 @@ h1, h2, h3, h4 {
             width: 50px;
             height: 50px;
             border-radius: 50px;
-            background: #00A3E2;
+            background: #002c44;
             cursor: pointer;
         }
         .slider::-moz-range-thumb {
             width: 50px;
             height: 50px;
-            background: #4CAF50;
+            background: #002c44;
             cursor: pointer;
-		}
-		
+        }
 
         /* 
         	godt arbejde
-        	virker sublimt :)
+        	virker sublimt 🙂
         */
 
 #time {
@@ -354,58 +318,19 @@ h1, h2, h3, h4 {
 */
 
 #products {
-	position:fixed;
-	width:80%;
-	margin:75px 10%;
-
-	overflow-x: auto;
 	display:flex;
-	flex-wrap:nowrap;
-	-webkit-overflow-scrolling: touch;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #022B44; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #022B44; 
+	justify-content: space-around;
+	flex-wrap:wrap;
 }
 .products {
-	width:40%;
-	height:auto;
-	float:left;
-	flex: 0 0 auto;
-	padding:0 25px;
-	font-size:20px;
-	text-align:center;
+	width:22.5%;
 	display:flex;
-	justify-content: space-between;
-	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
-.products img {
-	width:150px;
-	display:block;
-	margin:0 auto;
-}
-
 #confirmProduct {
 	border:0px solid #022B44;
 	transition-duration: 0.5s;
-	margin:700px auto 0  auto;
 }
 #produktKøbt {
     display:flex;
@@ -414,14 +339,12 @@ h1, h2, h3, h4 {
     flex-wrap:wrap;
 }
 .produktListe, .produktListeNavn {
-	width:20%;
+	width:50%;
 	text-align:right;
 }
 
 .produktListeNavn {
 	text-align:left;
-	width:80%;
-
 }
 
 /*
@@ -431,6 +354,7 @@ h1, h2, h3, h4 {
 */
 
 #paymentMethod {
+	background-color:orange;
 	display:flex;
 	justify-content: space-around;
 	flex-wrap:wrap;
@@ -438,37 +362,33 @@ h1, h2, h3, h4 {
 	overflow:hidden;
 	width:90%;
 	margin:auto;
+	border:3px solid #022B44;
 }
 
 .payment {
 	display:block;
 	width:50%;
-	font-size:30px;
+	font-size:50px;
+	padding:50px 25px;
 	border:none;
 	cursor: pointer;
 	color:#022B44;
 	background-color:white;
-	padding:25px;
-}
-.payment p {
-	margin:0;
-	margin-bottom:15px;
 }
 .payment:nth-child(even) {
-	border-left:0.5px solid grey;	
+	border-left:1px solid #022B44;	
 }
-.payment:nth-child(3), .payment:nth-child(4) {
-	border-bottom:0.5px solid grey;
-	border-top:0.5px solid grey;	
+.payment:nth-child(1), .payment:nth-child(2) {
+	border-bottom:1px solid #022B44;	
 }
 
 .payment i {
-	font-size:70px;
+	font-size:100px;
 	text-align:center;
 }
 
 .payment img {
-	width:70px;
+	width:100px;
 	text-align:center;
 }
 
@@ -480,139 +400,28 @@ h1, h2, h3, h4 {
 	width:0;
 	height:0;
 	overflow:hidden;
-	z-index:15;
+	z-index:50;
 	transition-duration: 0.5s;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
 }
-#kortBox, #mobilepayBox, #smsBox, #solkortBox, #kontantBox {
+#kortBox, #mobilepayBox, #smsBox, #solkortBox {
 	position:fixed;
-	top:5%;
-	left:50%;
-	width:0%;
-	height:90%;
+	top:50%;
+	left:5%;
+	width:90%;
+	height:0;
 	background-color:white;
-	box-shadow: 0 0 10px #424242;
+	box-shadow: 0 0 10px black;
 	text-align:center;
 	transition-delay: 0.5s;
 	transition-duration: 0.5s;
-	font-size:50px;
-	z-index:20;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
 	overflow:hidden;
 }
-#købSolkortBox {
-	position:fixed;
-	left:50%;
-	top:0;
-	right:0;
-	width:0;
-	height:100%;
-	background-color:white;
-	z-index:100;
-	text-align:center;
-	font-size:50px;
-	opacity: 0;
-	transition-duration: 1s;
-	transition-delay: 0.5s;
-	overflow: hidden;
-}
-#paymentTypes p {
-	width:800px;
-	margin:auto;
-	display:block;
-}
-#paymentTypes img {
-	margin:100px 0;
-	width:100px;
-}
-#paymentTypes ul {
-	list-style-type: none;
-	display:block;
-	width:600px;
-	margin:auto;
-	text-align:left;
-	overflow:hidden;
-}
-#paymenTypes li {
-	padding:20px 0;
-	overflow:hidden;
-}
-#smsBox ul {width:900px;}
-#paymentTypes i {
-	font-size:200px;
-	margin:50px 0;
-	overflow:hidden;
-}
-#confirmPayment, #cancelPayment {
+#confirmPayment {
 	position:absolute;
-	bottom:15%;
+	bottom:20%;
 	left:0;
 	right:0;
 	margin:auto;
-	z-index:20;
-	width:0%;
-	opacity:0;
-	overflow:hidden;
-	transition-duration: 0.5s;
-	transition-delay: 0.5s; 
-}
-#cancelPayment {
-	bottom:10%;
-	color:#022B44;
-	font-size:40px;
-	padding:10px 25px;
-	text-align:center;
-	display:block;
-}
-#solkortForm {
-	display:block;
-	width:80%;
-	text-align:left;
-	margin:auto;
-}
-#solkortForm input {
-	width:100%;
-	font-size:50px;
-	padding:10px;
-	border:1px solid #424242;
-	background-color:white;
-}
-
-#sunTimeBox {
-	display:flex;
-	justify-content: space-between;
-	width:50%;
-	margin:auto;
-	font-size:35px;
-	padding:0;
-}
-#sunTimeBox p {margin:0;}
-.solkortButton {
-	background-color:#022B44;
-	color:white;
-	width:275px;
-	font-size:35px;
-	margin:0;
-	padding:10px;
-	bottom:0;
-	border:none;
-	cursor: pointer;
-}
-/*#large {
-	color:#424242;
-	background-color:#16A1E2;
-	width:375px;
-	height:1000px;
-}
-#medium {height:800px;margin-top:200px;}
-#small {height:600px;margin-top:400px;}*/
-.flex {
-	display:flex;
-	justify-content: center;
-	border-bottom:3px solid #424242;
-	margin:100px 0;
 }
 
 /* 
@@ -626,7 +435,7 @@ footer {
 	bottom:0;
 	left:0;
 	width:100%;
-	border-top:1px solid #424242;
+	border-top:1px solid black;
 	height:10%;
 	display:flex;
 	justify-content: space-around;
@@ -636,9 +445,9 @@ footer {
 	background-color:white;
 }
 footer button, footer a {
-	color:#424242;
+	color:black;
 	padding:10px;
-	border:1px solid #424242;
+	border:1px solid black;
 	background-color:white;
 }
 footer button i, footer a i {font-size:50px;}
@@ -653,7 +462,7 @@ footer span:nth-child(even) {
 	height:2px;
 	margin-top:25px;
 }
-.active {background-color:#555555;}
+.active {background-color:black;}
 footer div {
 	display:flex;
 	justify-content: space-around;
@@ -678,10 +487,4 @@ footer div {
 	left:212.5px;
 	border:none;
 	background-color:transparent;
-	transition-duration: 0.5s;
-}
-
-#solS, #solM, #solL{
-	width: 44%!important;
-	margin: 2%!important;
 }
