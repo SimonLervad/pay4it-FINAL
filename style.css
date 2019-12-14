@@ -13,9 +13,9 @@ h1, h2, h3, h4 {
 	color:#424242;
 }
 
-/* 
-	this contains all styles about 
-	the help icon and menu 
+/*
+	this contains all styles about
+	the help icon and menu
 */
 
 #help {
@@ -65,8 +65,8 @@ h1, h2, h3, h4 {
 	right:25px;
 }
 
-/* 
-	this contains all styles about 
+/*
+	this contains all styles about
 	The front page
 */
 
@@ -132,9 +132,9 @@ h1, h2, h3, h4 {
 	box-shadow: 1px 1px 50px #444444;
 }
 
-/* 
-	this contains all styles about 
-	The "vælg kabine" page 
+/*
+	this contains all styles about
+	The "vælg kabine" page
 	the form about setting up your request
 	and other styles on "kabine.php"
 */
@@ -333,9 +333,9 @@ h1, h2, h3, h4 {
             background: #4CAF50;
             cursor: pointer;
 		}
-		
 
-        /* 
+
+        /*
         	godt arbejde
         	virker sublimt :)
         */
@@ -349,7 +349,7 @@ h1, h2, h3, h4 {
 }
 
 /*
-	The contains all styles 
+	The contains all styles
 	about products
 	AND styles about choosing a product
 */
@@ -371,19 +371,19 @@ h1, h2, h3, h4 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #022B44; 
+  background: #022B44;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #022B44; 
+  background: #022B44;
 }
 .products {
 	width:40%;
@@ -456,11 +456,11 @@ h1, h2, h3, h4 {
 	margin-bottom:15px;
 }
 .payment:nth-child(even) {
-	border-left:0.5px solid grey;	
+	border-left:0.5px solid grey;
 }
 .payment:nth-child(3), .payment:nth-child(4) {
 	border-bottom:0.5px solid grey;
-	border-top:0.5px solid grey;	
+	border-top:0.5px solid grey;
 }
 
 .payment i {
@@ -557,7 +557,7 @@ h1, h2, h3, h4 {
 	opacity:0;
 	overflow:hidden;
 	transition-duration: 0.5s;
-	transition-delay: 0.5s; 
+	transition-delay: 0.5s;
 }
 #cancelPayment {
 	bottom:10%;
@@ -616,10 +616,10 @@ h1, h2, h3, h4 {
 	margin:100px 0;
 }
 
-/* 
-	this contains all styles about 
-	the footer 
-	and the navigation through all pages 
+/*
+	this contains all styles about
+	the footer
+	and the navigation through all pages
 */
 
 footer {
@@ -686,4 +686,3 @@ footer div {
 	width: 44%!important;
 	margin: 2%!important;
 }
-

@@ -33,6 +33,21 @@
 		display: block;
 		padding: 40px;
 	}
+
+	.fortryd_knap {
+		background-color:white;
+		border: none;
+		border-radius:50px;
+		width:75%;
+		color:#022B44;
+		font-size:30px;
+		padding:10px 25px;
+
+		cursor:pointer;
+		outline:none;
+		text-decoration: none;
+	}
+
 </style>
 
 <!-- Nye solkort sat ind -->
@@ -45,7 +60,7 @@
 	<a href="solkort-input.php" class="solkort"><img src="./images/BronzeCard-01.png" alt="Solkort bronze" width="460"></a>
 	</div>
 
-	<a href="index.php">Afbryd</a>
+	<a class="fortryd_knap" href="index.php">fortryd</a>
 </div>
 
 <!--

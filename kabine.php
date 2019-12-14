@@ -2,9 +2,24 @@
 <style type="text/css">
 	#helpOpen {color:#232323;text-shadow:none;box-shadow:none;border:none;}
 </style>
+<style>
+.fortryd_knap {
+	background-color:white;
+	border: none;
+	border-radius:50px;
+	width:75%;
+	color:#022B44;
+	font-size:30px;
+	padding:10px 25px;
+
+	cursor:pointer;
+	outline:none;
+	text-decoration: none;
+}
+</style>
 <form id="container">
 
-	<!-- 
+	<!--
 		vælg kabine
 	-->
 
@@ -42,7 +57,7 @@
 			</h3>
 			<div id="kabine"></div>
 			<div style="display:flex;justify-content: space-between;">
-				<div id="ordreTime"> 
+				<div id="ordreTime">
 			    </div>
 			    <div style="display:flex">
 		    		<div id="priceTag"></div>
@@ -73,7 +88,7 @@
 
 	<div id="boxThree">
 		<div id="products">
-			
+
 		</div>
 		<button class="confirmButton" id="confirmProduct" type="button">
 			Spring over
@@ -106,14 +121,14 @@
 
 <!--Nye solkort-->
 	<div id="købSolkortBox">
-		<h2>Opret solkort</h2>
+		<h2>Vælg solkort</h2>
 		<div class="solkorts">
 		<div class="solkort" id="large"><img id="solL" src="./images/GoldCard-01.png" alt="Solkort guld" width="460"></div>
 		<div class="solkort" id="medium"><img id="solM" src="./images/SilverCard-01.png" alt="Solkort sølv" width="460"></div>
 		<div class="solkort" id="small"><img id="solS" src="./images/BronzeCard-01.png" alt="Solkort bronze" width="460"></div>
 		</div>
 
-		<a class="confirmButton" href="index.php">Afbryd</a>
+		<a class="fortryd_knap" type="button" href="index.php">Fortryd</a>
 	</div>
 	<!--div id="købSolkortBox">
 		<h1>Køb solkort</h1>
@@ -152,7 +167,7 @@
 			<li>2. Indtast kode</li>
 			<li>3. Godkend betaling</li>
 		</ul>
-	</div>	
+	</div>
 	<div id="mobilepayBox">
 		<h1>Mobilepay</h1>
 		<p>
