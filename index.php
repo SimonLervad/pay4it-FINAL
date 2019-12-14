@@ -8,9 +8,9 @@
 			Opret<br>Elektronisk<br>solkort
 		</a>
 			<div id="language">
-					<img src="images/engelsk.svg">
-			    <img src="images/dansk.svg">
-			    <img src="images/tysk.svg">
+					<a href="englishhjem.php"><img src="images/engelsk.svg"></a>
+			    <a href="index.php"><img src="images/dansk.svg"></a>
+			    <a href="deutchhjem.php"><img src="images/tysk.svg"></a>
 			</div>
 </div>
 

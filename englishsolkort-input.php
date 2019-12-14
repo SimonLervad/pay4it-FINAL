@@ -84,22 +84,22 @@
 	<h2>Solkort</h2>
 	<div id="paymentTypes">
 		<div id="solkortBox">
-			<h1>Solkort</h1>
+			<h1>Suncard</h1>
 			<p>
-				Du har valgt at købe et solkort, dine oplysninger bliver kun brugt til at logge ind, vi hverken gemmer eller kan se dine oplysninger.
+				You have chosen to buy a Suncard, your information is only used to log in, we do not store or see your information.
 			</p>
 			<i class="far fa-address-card"></i>
 			<form id="solkortForm">
-				Telefonnr. <br>
+				Phonenumber <br>
 				<input type="tel" name="tel" required="true"><br>
-				Kode <br>
+				Code <br>
 				<input type="password" name="kode"><br>
-				<a style="float:right;" href="" id="glemtKode">Glemt kode?</a>
+				<a style="float:right;" href="" id="glemtKode">Forgot code?</a>
 			</form>
-			<a href="kabine.php" class="confirmButton" id="confirmPayment">
-		Bekræft Køb
+			<a href="englishkabine.php" class="confirmButton" id="confirmPayment">
+		Confirm purchase
 	</a>
-	<a id="cancelPayment" href="index.php">Anuller køb</a>
+	<a id="cancelPayment" href="index.php">Cancel purchase</a>
 	</div>
 		</div>
 </div>
