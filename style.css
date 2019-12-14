@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 
 #section a i {font-size:200px;}
 
-.language a {
+#language {
 	width:	50%;
 	display:flex;
 	justify-content: space-around;
@@ -108,7 +108,7 @@ h1, h2, h3, h4 {
 	margin-left: 150px;
 }
 
-.language img {
+#language img {
 	box-shadow: 3px 3px 10px #666666;
 	margin-left: 40px;
 }
