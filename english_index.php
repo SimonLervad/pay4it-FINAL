@@ -2,14 +2,14 @@
 
 <div id="section">
 		<a id="vka" href="kabine.php">
-			Vælg<br>kabine
+			Choose<br>Cabin
 		</a>
 		<a id="vsk" href="solkort.php">
-			Opret<br>Elektronisk<br>solkort
+			Create<br>Electronic<br>Suncard
 		</a>
-			<div id="language">
-					<img src="images/engelsk.svg">
-			    <img src="images/dansk.svg">
+			<div class="language">
+				<img src="images/engelsk.svg">
+			    <a href="index.php"><img src="images/dansk.svg"></a>
 			    <img src="images/tysk.svg">
 			</div>
 </div>
