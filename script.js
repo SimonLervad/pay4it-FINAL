@@ -405,7 +405,7 @@ xhr.addEventListener("load", function() {
                 bp.setAttribute("class", "produktListeNavn");
                 bp.setAttribute("id", "PLN="+`${product.ID}`);
 
-                bp.innerHTML = produktName;
+               bp.innerHTML = "&#10006 " + produktName;
                 $("produktKøbt").appendChild(bp);
 
                 increase();
